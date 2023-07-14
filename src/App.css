@@ -168,4 +168,8 @@ header p {
   .search-box {
     min-width: 70vw;
   }
+  .results {
+    max-width: fit-content;
+    width: 100vw;
+  }
 }
