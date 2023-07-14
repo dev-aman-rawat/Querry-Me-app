@@ -72,6 +72,7 @@ function App() {
           <a
             href="https://en.wikipedia.org/wiki/Special:Random"
             target="_blank"
+            rel="noreferrer"
           >
             <button className="random-btn">
               <i className="fa-sharp fa-solid fa-magnifying-glass"> </i>Random
