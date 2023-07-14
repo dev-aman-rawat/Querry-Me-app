@@ -172,4 +172,9 @@ header p {
     max-width: fit-content;
     width: 100vw;
   }
+  header p {
+    margin-bottom: 2px;
+    margin-right: 0;
+    width: auto;
+  }
 }
