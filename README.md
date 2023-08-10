@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### [Live Site] (https://querry-me.netlify.app)
+### Vist my project:
+### [Live Site](https://querry-me.netlify.app)
 
 ## Available Scripts
 
