@@ -1,25 +1,11 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### Vist my project:
-### [Live Site](https://querry-me.netlify.app)
+# Querry Me!
 
 ## Available Scripts
+### `npm install` & `npm start`
 
-In the project directory, you can run:
+## View Project [here](https://querry-me.netlify.app) 
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm install`
-
-Installs all the node dependency.
-
-###[Information] 
-Querry me is a Search app build with Wikipedia API.
+![Screenshot 2023-08-25 131345](https://github.com/amanr-dev/Querry-Me-app/assets/124811276/c5b520eb-2ea8-4ffe-a183-398cf463b688)
+![Screenshot 2023-09-11 172950](https://github.com/amanr-dev/Querry-Me-app/assets/124811276/611cb1d1-084f-42e2-87d2-3c12c91e9e3b)
