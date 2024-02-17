@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -117,6 +118,19 @@ function App() {
           );
         })}
       </div>
+      <footer className="flex-end">
+        <p className="flex-center" style={{ color: "#7c7c7c" }}>
+          Copyright
+          <a
+            href="https://github.com/amanr-dev"
+            style={{ color: "#7c7c7c", textDecoration: "none" }}
+            className="flex-center"
+          >
+            <span> @Aman Rawat</span>
+            <FaGithub style={{ fontSize: "25px" }} />
+          </a>
+        </p>
+      </footer>
     </main>
   );
 }
