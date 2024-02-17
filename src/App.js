@@ -123,6 +123,7 @@ function App() {
           Copyright
           <a
             href="https://github.com/amanr-dev"
+            target="_blank"
             style={{ color: "#7c7c7c", textDecoration: "none" }}
             className="flex-center"
           >
