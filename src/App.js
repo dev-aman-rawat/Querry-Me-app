@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -25,9 +25,9 @@ function App() {
   };
 
   const clearSearchResults = () => {
-    const searchInput = document.querySelector(".search");
+    // const searchInput = document.querySelector(".search");
     // console.log("clear");
-    if (searchInput.value.length > 0) {
+    if (setSearch.length > 0) {
       console.log("clear");
       setSearch("");
       setResults([]);
@@ -35,19 +35,28 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    if (search.length <= 0 && results.length > 0) {
+      setResults([]);
+      setSearchInfo({});
+    } else {
+      return;
+    }
+  }, [search]);
+
   return (
     <main className="App">
       <header>
         <div className="logo" aria-hidden="true">
-          <span className="blue">Q</span>
-          <span className="red">U</span>
-          <span className="yellow">E</span>
-          <span className="blue">R</span>
-          <span className="green">Y</span>
-          <span className="red">.</span>
-          <span className="blue">M</span>
-          <span className="yellow">E</span>
-          <span className="red exclaim">!</span>
+          <span className="blue logo-letter">Q</span>
+          <span className="red logo-letter">U</span>
+          <span className="yellow logo-letter">E</span>
+          <span className="blue logo-letter">R</span>
+          <span className="green logo-letter">Y</span>
+          <span className="red logo-letter">.</span>
+          <span className="blue logo-letter">M</span>
+          <span className="yellow logo-letter">E</span>
+          <span className="red exclaim logo-letter">!</span>
         </div>
         <form className="search-box" onSubmit={handleSubmit}>
           <input
@@ -84,6 +93,7 @@ function App() {
           <p>
             Total Results:
             <span className="total-results"> {searchInfo.totalhits}</span>
+            <span className="text-light">(currently showing 20)</span>
           </p>
         ) : (
           ""

@@ -81,12 +81,14 @@ header {
 }
 
 .results {
-  width: 60vw;
+  width: 66vw;
   margin: 0 auto;
   max-width: 80vw;
+  margin-top: 20px;
 }
 
 .result {
+  background: white;
   width: 100%;
   padding: 20px;
   margin-bottom: 20px;
@@ -158,6 +160,18 @@ header p {
   font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
+}
+
+.logo-letter {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.text-light {
+  font-size: 14px;
+  color: #464646;
+  font-weight: 500;
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 700px) {
