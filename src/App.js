@@ -59,13 +59,21 @@ function App() {
           <span className="red exclaim logo-letter">!</span>
         </div>
         <form className="search-box" onSubmit={handleSubmit}>
-          <input
-            className="search"
-            type="text"
-            placeholder="Search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
+          <div className="search-inner-div">
+            <i
+              style={{ fontSize: "20px", color: "#7c7c7c" }}
+              className="fa-sharp fa-solid fa-magnifying-glass"
+            >
+              {" "}
+            </i>
+            <input
+              className="search"
+              type="text"
+              placeholder="Search..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
           <div
             id="clear"
             className={(search.length > 0 ? "" : "none") + " " + "clear-btn"}
@@ -83,10 +91,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="random-btn">
-              <i className="fa-sharp fa-solid fa-magnifying-glass"> </i>Random
-              Article ?
-            </button>
+            <button className="random-btn">Wanna read Random Article?</button>
           </a>
         </div>
         {searchInfo.totalhits ? (
