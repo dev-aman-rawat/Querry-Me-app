@@ -122,12 +122,12 @@ function App() {
         <p className="flex-center" style={{ color: "#7c7c7c" }}>
           Copyright
           <a
-            href="https://github.com/amanr-dev"
+            href="https://github.com/dipanshurdev"
             target="_blank"
             style={{ color: "#7c7c7c", textDecoration: "none" }}
             className="flex-center"
           >
-            <span> @Aman Rawat</span>
+            <span> @Dipanshu Rawat</span>
             <FaGithub style={{ fontSize: "25px" }} />
           </a>
         </p>
