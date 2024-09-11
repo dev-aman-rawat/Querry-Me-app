@@ -1,5 +1,7 @@
 # Querry Me!
 
+Querry-Me is a simple and efficient search application built with React.js and the Wikipedia Search API. The app allows users to input a query, and it fetches and displays relevant results directly from Wikipedia. With a clean user interface and real-time search functionality, Querry-Me offers a quick and easy way to access information from the vast Wikipedia database.
+
 ## Available Scripts
 ### `npm install` & `npm start`
 
