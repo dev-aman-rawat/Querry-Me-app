@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 * {
   margin: 0;
@@ -6,7 +10,8 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #eff6ff;
+    color: #0f172a;
   font-family: "Lora", serif;
 }
 
@@ -15,8 +20,9 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
+  width: 1388px;
   min-height: 100vh;
+  margin: auto;
 }
 
 header {
@@ -56,9 +62,10 @@ header {
   align-items: center;
   border-radius: 500px;
   padding: 10px 20px;
-  border: 1px solid gray;
+  border: 1px solid #1e293b;
   overflow: hidden;
   transition: 0.5s;
+  width: 777px;
 }
 
 .search {
@@ -72,33 +79,22 @@ header {
   transition: 0.5s;
   outline: none;
   border: none;
-  min-width: 150px;
-  color: #7c7c7c;
+  width: 100%;
 }
 
 .search-box:focus-within {
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 4px #10162071;
   transform: translateY(-5px);
 }
 
-.results {
-  width: 66vw;
-  margin: 0 auto;
-  max-width: 80vw;
-  margin-top: 20px;
-}
 
 .result {
-  background: white;
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 20px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .result:hover {
-  box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 3px 5px #dfedff7e;
 }
 
 .results a {
@@ -108,20 +104,19 @@ header {
 }
 
 .results p {
-  color: rgb(37, 37, 37);
   margin: 10px 0px;
 }
 
 .results p .searchmatch {
-  color: rgb(215 97 7);
+  color: #3b82f6;
   font-weight: 800;
 }
 
-header p {
+/* header p {
   margin-right: 90%;
   width: 100%;
   margin-bottom: 10px;
-}
+} */
 
 .total-results {
   color: #d76107;
@@ -150,31 +145,25 @@ header p {
 }
 
 .random-btn:hover {
-  color: blue;
-  transition: all 0.5s ease-in;
+  box-shadow: 4px 4px 2px slategrey;
+  transition: all 0.3s ease-in-out;
 }
 
 .random-btn {
   background: transparent;
-  border: 1px solid #999999;
+  border: 1px solid #1e293b;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-  color: #999999;
+  color: #1e293b;
   padding: 10px;
   border-radius: 25px;
+   transition: all 0.3s ease-in-out;
 }
 
 .logo-letter {
   font-size: 5rem;
   font-weight: bolder;
-}
-
-.text-light {
-  font-size: 14px;
-  color: #464646;
-  font-weight: 500;
-  padding-left: 5px;
 }
 
 .search-inner-div {
@@ -184,36 +173,17 @@ header p {
   gap: 2px;
 }
 
-.flex-end {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 100%;
-  margin-top: 10%;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  justify-content: center;
-}
-
 @media screen and (max-width: 700px) {
   .logo {
     letter-spacing: 0;
     font-size: 3rem;
   }
-  .search-box {
+  /* .search-box {
     min-width: 70vw;
-  }
-  .results {
+  } */
+  .results, header {
     max-width: fit-content;
     width: 100vw;
   }
-  header p {
-    margin-bottom: 2px;
-    margin-right: 0;
-    width: auto;
-  }
+
 }
