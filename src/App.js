@@ -305,7 +305,7 @@ function App() {
       </div>
       {selectedArticle && (
         <div className="fixed inset-0 flex items-center justify-center bg-neutral-900/80  bg-opacity-20 z-50">
-          <div className="bg-gray-100 rounded-lg shadow-lg w-full max-w-4xl  relative overflow-y-scroll max-h-[50rem] p-8">
+          <div className="bg-gray-100 rounded-lg shadow-lg w-full max-w-3xl  relative overflow-y-scroll max-h-[44rem] p-8">
             <button
               onClick={() => setSelectedArticle(null)}
               className="absolute text-xl top-4 right-4 text-slate-900 hover:rotate-180 transition-all duration-300 hover:scale-150"
