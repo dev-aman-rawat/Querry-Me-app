@@ -253,15 +253,15 @@ function App() {
           </div>
         </form>
         <div className="random-article">
-          <a
-            href="https://en.wikipedia.org/wiki/Special:Random"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="px-6 py-4 bg-blue-500 hover:bg-blue-600 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-blue-700 to-red-500 font-semibold rounded-lg shadow-md transition duration-300 hover:shadow-lg">
+          <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-blue-700 to-red-500 font-semibold rounded-lg shadow-md transition duration-300 hover:shadow-lg">
+            <a
+              href="https://en.wikipedia.org/wiki/Special:Random"
+              target="_blank"
+              rel="noreferrer"
+            >
               Wanna read Random Article?
-            </button>
-          </a>
+            </a>
+          </button>
         </div>
 
         {searchInfo.totalhits ? (
